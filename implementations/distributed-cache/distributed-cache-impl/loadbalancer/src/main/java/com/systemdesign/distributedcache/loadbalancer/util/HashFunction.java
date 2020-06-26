@@ -1,8 +1,8 @@
 package com.systemdesign.distributedcache.loadbalancer.util;
 
-public interface HashFunction {
+public class HashFunction {
 
-    default int hash(Object object) {
+    public long hash(String object) {
         return object.hashCode();
     }
 }

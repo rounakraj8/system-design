@@ -1,16 +1,20 @@
 package com.systemdesign.distributedcache.loadbalancer.controller;
 
 import com.systemdesign.distributedcache.loadbalancer.dto.*;
+import com.systemdesign.distributedcache.loadbalancer.service.*;
+import lombok.*;
 import org.springframework.web.bind.annotation.*;
 
-@RestController public class LoadBalancerController {
+@RestController @RequiredArgsConstructor public class LoadBalancerController {
 
-    @GetMapping("/cache/{key}") KeyValuePair get(@PathVariable String key) {
-        return new KeyValuePair(key, key);
+    private final LoadBalancerService loadBalancerService;
+
+    @GetMapping("/cache/{key}") KeyValuePair getCache(@PathVariable String key) {
+        return loadBalancerService.get(key);
     }
 
-    @PutMapping("/cache/{key}") String put(@PathVariable String key, @RequestBody KeyValuePair keyValuePair) {
-        return keyValuePair.getKey();
+    @PutMapping("/cache") String put(@RequestBody KeyValuePair keyValuePair) {
+        return loadBalancerService.put(keyValuePair);
     }
 
 }
