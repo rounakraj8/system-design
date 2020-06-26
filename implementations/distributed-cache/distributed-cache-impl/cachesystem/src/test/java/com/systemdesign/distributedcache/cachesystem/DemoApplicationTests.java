@@ -1,4 +1,4 @@
-package com.example.cachesystem;
+package com.systemdesign.distributedcache.cachesystem;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

@@ -9,8 +9,8 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 
-    <groupId>org.system-design.distributed-cache</groupId>
-	<artifactId>cache-system</artifactId>
+    <groupId>org.systemdesign.distributedcache</groupId>
+	<artifactId>cachesystem</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>demo</name>
 	<description>Demo project for Spring Boot</description>
