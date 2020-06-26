@@ -9,7 +9,7 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 
-    <groupId>org.system-design.distributed-cache</groupId>
+    <groupId>com.system-design.distributed-cache</groupId>
 	<artifactId>load-balancer</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>demo</name>
