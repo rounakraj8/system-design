@@ -1,4 +1,4 @@
-package com.system-design.distributed-cache.load-balancer;
+package com.systemdesign.distributedcache.loadbalancer;
 
 import org.springframework.boot.*;
 import org.springframework.boot.autoconfigure.*;
